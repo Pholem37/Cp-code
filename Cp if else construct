@@ -1,0 +1,39 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+int score;
+clrscr();
+printf("enter the students score (between 0 to 100 only):");
+scanf("%d",&score);
+if(score<0||score>100)
+{
+printf("invalid score!!please enter the score between 0 to 100 only.\n");
+getch();
+}
+if(score>=90&&score<=100)
+{
+printf("Your Grade:A\n");
+}
+else if(score>=80&&score<=89)
+{
+printf("Your Grade:B\n");
+}
+else if(score>=70&&score<=79)
+{
+printf("Your Grade:C\n");
+}
+else if(score>=60&&score<=69)
+{
+printf("Your Grade:D\n");
+}
+else if(score>=50&&score<=59)
+{
+printf("Your Grade:E\n");
+}
+else
+{
+printf("Your Grade:F.You have failed!!\n");
+}
+getch();
+}
