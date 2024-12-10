@@ -1,0 +1,15 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+int a=13,b=4,c=8,d=156;
+clrscr();
+printf("BITWISE OPERATORS \n");
+printf("\n Bitwise AND %d&%d=%d",a,b,a&b);
+printf("\n Bitwise OR %d|%d=%d",a,b,a|b);
+printf("\n Bitwise EX-OR %d^%d=%d",a,b,a^b);
+printf("\n Bitwise LEFT SHIFT %d<<%d=%d",c,b,c<<b);
+printf("\n Bitwise RIGHT SHIFT %d>>%d=%d",d,b,d>>b);
+printf("\n Bitwise NOT of %d=%d",c,~c);
+getch();
+}
