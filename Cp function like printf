@@ -1,0 +1,27 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+int division;
+int roll_number,total_marks;
+char name[50];
+float percentage;
+clrscr();
+printf("\n Enter students name:");
+gets(name);
+printf("Enter students division:");
+division=getchar();
+printf("Enter students roll number:");
+scanf("%d",&roll_number);
+printf("\nEnter students total marks:");
+scanf("%d",&total_marks);
+percentage=total_marks/6.0;
+printf("\n Details entered by you:\n");
+printf("Students name:");
+puts(name);
+printf("Students division:");
+putchar(division);
+printf("\nStudents roll number:%d",roll_number);
+printf("\nStudents percentage:%.2f",percentage);
+getch();
+}
