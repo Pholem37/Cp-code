@@ -1,0 +1,21 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+int n,nl,rem,num=0;
+clrscr();
+printf("enter a positive integer;");
+scanf("%d",&n);
+nl=n;
+while(nl!=0)
+{
+rem=nl%10;
+num+=rem*rem*rem;
+nl/=10;
+}
+if(num==n)
+printf("\n%d is an armstrong number.",n);
+else
+printf("\n%d is not an armstrong number.",n);
+getch();
+}
