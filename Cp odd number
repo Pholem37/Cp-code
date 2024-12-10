@@ -1,0 +1,18 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+int i,n;
+printf("enter the upper limit(n):");
+scanf("%d",&n);
+printf("odd numbers between 1 and %d are:\n",n);
+for(i=1;i<=n;i++)
+{
+if(i%2==0)
+{
+continue;
+}
+printf("%d\n",i);
+}
+getch();
+}
