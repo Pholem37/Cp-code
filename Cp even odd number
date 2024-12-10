@@ -1,0 +1,44 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+int num,choice,i;
+clrscr();
+
+//asking user for input
+printf("enter a number up to which you want to print:");
+scanf("%d",&num);
+
+//asking the user to choose between odd and even numbers
+printf("choose:\n1.even numbers\n2.odd numbers\n");
+scanf("%d",&choice);
+
+//print even or odd numbers based on user choice
+if(choice==1)
+{
+printf("even number up to%d are:\n",num);
+for(i=1;i<=num;i++)
+{
+if(i%2!=0)
+{
+continue;//skip odd numbers
+}
+printf("%d",i);
+}
+}
+else if (choice==2)
+{printf("odd number up to %d are:\n",num);
+for (i=1;i<=num;i++)
+{
+if (i%2==0)
+{
+continue;//skip even numbers
+}
+printf("%d",i);
+}
+}
+else
+{printf("invalid choice!please select 1 for evn or 2 for odd number.\n");
+}
+getch();
+}
