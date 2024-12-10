@@ -1,0 +1,37 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+int score;
+clrscr();
+printf("ENTER THE STUDENT'S SCORE (between 0 to 100 only)");
+scanf("%d",&score);
+if(score<0||score>100)
+{
+printf("invalid score!please enter a score between 0 to 100.\n");
+getch();
+}
+switch(score/10)
+{
+case 10:
+case 9:
+printf("GRADE:A \n");
+break;
+case 8:
+printf("GRADE:B \n");
+break;
+case 7:
+printf("GRADE:C \n");
+break;
+case 6:
+printf("GRADE:D \n");
+break;
+case 5:
+printf("GRADE:E \n");
+break;
+default:
+printf("GRADE:F \n");
+break;
+}
+getch();
+}
