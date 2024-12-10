@@ -1,0 +1,32 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+int a=13,b=4,c=8,lowest;
+clrscr();
+printf("ARITHMATIC OPERATORS \n");
+printf("%d+%d=%d \n",a,b,a+b);
+printf("%d-%d=%d \n",a,b,a-b);
+printf("%d*%d=%d \n",a,b,a*b);
+printf("%d/%d=%d \n",a,b,a/b);
+printf("%d %% %d=%d \n",a,b,a%b);
+printf("RELATIONAL OPERATORS \n");
+if (a>b)
+printf("%d is greater than %d",a,b);
+else
+printf("%d is greater than %d",b,a);
+if (a<b)
+printf("\n %d is less than %d",a,b);
+else
+printf("\n %d is less than %d",b,a);
+if(a==b)
+printf("\n both a nad b are equal");
+else
+printf("\n %d and %d are not equal",a,b);
+printf("\n LOGICAL OPERATORS");
+if(a>b && a>c)
+printf("\n %d is greater than %d and %d",a,b,c);
+if(c>a || c>b)
+printf("\n %d is greater than %d and %d",c,a,b);
+getch();
+}
